@@ -1,11 +1,21 @@
 {
-    "name": "Python & Jupyter Lab",
-    "features": {
-        "jupyterlab": {
-            "version": "latest"
-        }
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+      "cpus": 4
     },
-    "build": {
-        "dockerfile": "Dockerfile"
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "python3 -m pip install -r requirements.txt",
+    "postCreateCommand": "",
+    "customizations": {
+      "codespaces": {
+        "openFiles": []
+      },
+      "vscode": {
+        "extensions": [
+          "ms-toolsai.jupyter",
+          "ms-python.python",
+          "bierner.docs-view"
+        ]
+      }
     }
-}
+  }
