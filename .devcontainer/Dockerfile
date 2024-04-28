@@ -15,4 +15,5 @@ RUN pip install jupyterlab
 EXPOSE 8888
 
 # Run JupyterLab
-CMD ["jupyter", "lab", "--allow-root", "--no-browser", "--ip=0.0.0.0"]
+COPY jupyterlab-debian.sh /tmp/library-scripts/
+RUN bash /tmp/library-scripts/jupyterlab-debian.sh
