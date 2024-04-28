@@ -1,14 +1,11 @@
 {
     "name": "Python & Jupyter Lab",
+    "features": {
+        "jupyterlab": {
+            "version": "latest"
+        }
+    },
     "build": {
         "dockerfile": "Dockerfile"
-    },
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "postCreateCommand": "jupyter lab --allow-root --no-browser --ip=0.0.0.0",
-    "forwardPorts": [8888],
-    "extensions": [
-        "ms-python.python"
-    ]
+    }
 }
