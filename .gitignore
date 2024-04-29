@@ -2,7 +2,6 @@
 .ipynb_checkpoints
 Untitled.ipynb
 __pycache__
-videos
-video
-tutorial
+video*
+tutorial*
 archive
