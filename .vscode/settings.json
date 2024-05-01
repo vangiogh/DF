@@ -1,8 +1,6 @@
 {
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
-  "editor.fontLigatures": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
@@ -13,9 +11,13 @@
   "editor.useTabStops": true,
   "emmet.triggerExpansionOnTab": true,
   "files.autoSave": "afterDelay",
-  "terminal.integrated.fontSize": 18,
-  "workbench.colorTheme": "Dracula Pro (Van Helsing)",
-  "workbench.fontAliasing": "antialiased",
+  "terminal.integrated.fontSize": 9,
   "workbench.statusBar.visible": true,
-  "editor.parameterHints.enabled": false
+  "editor.parameterHints.enabled": false,
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "vscode-notebook-cell"
+    }
+  ]
 }
