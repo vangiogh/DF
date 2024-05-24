@@ -1,0 +1,47 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postCreateCommand": "",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "bierner.docs-view",
+        "christian-kohler.path-intellisense",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "dracula-theme.theme-dracula"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+        "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+        "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+        "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+        "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+        "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+        "python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+        "python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+        "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+        "python.linting.pylintArgs": [
+          "--disable=C0111"
+        ]
+      },
+      "remoteUser": "vscode",
+      "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc" //Set Terminal Prompt to $
+    }
+  }
+}
